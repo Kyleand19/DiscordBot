@@ -33,4 +33,10 @@ module.exports = async (bot, message) => {
 		require("../lib/KhangNeko.js")(bot, message);
 		bot.printSpace();
 	}
+
+	// DanielKYS RandomEvent
+	if (message.author.id == bot.constants.DANIEL_ID) {
+		require("../lib/DanielKYS.js")(bot, message);
+		bot.printSpace();
+	}
 };
