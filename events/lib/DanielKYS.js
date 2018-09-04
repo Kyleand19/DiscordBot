@@ -5,4 +5,5 @@ module.exports = async (bot, message) => {
     message.react(bot.emojis.find(val => val.name == "regional_indicator_y"));
     message.react(bot.emojis.find(val => val.name == "regional_indicator_s"));
     console.log("Event was triggered. Reacted to Daniel's message");
+    return;
 }
