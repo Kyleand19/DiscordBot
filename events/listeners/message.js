@@ -39,4 +39,11 @@ module.exports = async (bot, message) => {
 		require("../lib/DanielKYS.js")(bot, message);
 		bot.printSpace();
 	}
+
+	// Brigette "op" listener
+	if (require("../lib/OP_Parser")(bot,message)){
+		//decide if you want to implement parse event handling here or elswhere, this example being elsewhere
+		require("../lib/OP_Writer");
+		bot.printSpace();
+	}
 };
